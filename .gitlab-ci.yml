@@ -1,0 +1,22 @@
+image: node:12
+
+stages:
+  - test
+
+.install: &install
+  yarn install
+
+eslint:
+  stage: test
+  before_script:
+    - *install
+  script:
+    - yarn eslint
+    - yarn prettier
+
+test:
+  stage: test
+  before_script:
+    - *install
+  script:
+    - yarn test

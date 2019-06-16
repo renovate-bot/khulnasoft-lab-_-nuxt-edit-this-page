@@ -1,0 +1,36 @@
+{
+  "name": "@gitlab/nuxt-edit-this-page",
+  "version": "0.0.0",
+  "description": "Add an 'Edit this page' link to your Nuxt pages",
+  "license": "MIT",
+  "main": "lib/module.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "eslint": "eslint lib/ test/",
+    "eslint:fix": "yarn eslint --fix",
+    "prettier": "prettier --list-different 'lib/**/*.js'",
+    "prettier:fix": "yarn prettier --write",
+    "test": "jest",
+    "dev": "nuxt -c ./test/fixture/nuxt.config.js"
+  },
+  "devDependencies": {
+    "@gitlab/eslint-config": "^1.6.0",
+    "eslint": "^5.16.0",
+    "eslint-plugin-jest": "^22.6.4",
+    "jest": "^24.1.0",
+    "jsdom": "^15.0.0",
+    "nuxt-edge": "^2.9.0-26010731.f3d29e37",
+    "prettier": "^1.18.2",
+    "request-promise-native": "^1.0.5",
+    "standard-version": "^6.0.1",
+    "yargs": "^13.2.4"
+  },
+  "eslintIgnore": [
+    "lib/templates/*.*"
+  ]
+}
