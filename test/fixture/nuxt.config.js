@@ -4,7 +4,7 @@ const { argv } = require('yargs');
 module.exports = (options = {}) => {
   const fixture = options.fixture || argv.fixture;
   let moduleConfig = {
-    repo: 'git@gitlab.com:gitlab-org/nuxt-edit-this-page.git',
+    repo: 'git@gitlab.com:gitlab-org/frontend/nuxt-edit-this-page.git',
   };
   if (fixture === 'branch') {
     moduleConfig.branch = 'some-branch';
