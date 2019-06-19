@@ -122,10 +122,9 @@ Text to show when rendering the link. Defaults to the value set in the module's 
 
 ### Custom path resolver
 
-Sometimes, your pages display contents from other files and you might want the "Edit this page" link to point to the included file, rather than the visited page's component. This can be achieved by adding an `editThisPage` option to your page. `editThisPage` is a function that receives the current route and should return the computed file path relative to the repository's root.
+Sometimes, your pages display contents from other files and you might want the "Edit this page" link to point to the included file, rather than the visited page's component. This can be achieved by adding an `editThisPage.resolve` option to your page. `editThisPage.resolve` is a function that receives the current route and should return the computed file path relative to the repository's root.
 
 Example:
-
 
 ```vue
 <template>
@@ -134,9 +133,11 @@ Example:
 
 <script>
 export default {
-  editThisPage({ route }) {
-    const { slug } = route.params;
-    return `docs/${slug}.md`;
+  editThisPage: {
+    resolve({ route }) {
+      const { slug } = route.params;
+      return `docs/${slug}.md`;
+    },
   },
 };
 </script>

@@ -4,9 +4,11 @@
 
 <script>
 export default {
-  editThisPage({ route }) {
-    const { slug } = route.params;
-    return `${slug}.md`;
+  editThisPage: {
+    resolve({ route }) {
+      const { slug } = route.params;
+      return `${slug}.md`;
+    },
   },
 };
 </script>
