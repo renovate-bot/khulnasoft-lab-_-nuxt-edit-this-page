@@ -19,7 +19,10 @@
     "dev": "nuxt -c ./test/fixture/nuxt.config.js"
   },
   "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
     "@gitlab/eslint-config": "^1.6.0",
+    "babel-jest": "^24.8.0",
     "eslint": "^5.16.0",
     "eslint-plugin-jest": "^22.6.4",
     "jest": "^24.1.0",
