@@ -1,12 +1,15 @@
 # nuxt-edit-this-page
 
-[![npm (scoped with tag)](https://img.shields.io/npm/v/@gitlab/nuxt-edit-this-page/latest.svg?style=flat-square)](https://npmjs.com/package/@gitlabnuxt-/edit-this-page)
+[![npm (scoped with tag)](https://img.shields.io/npm/v/@gitlab/nuxt-edit-this-page/latest.svg?style=flat-square)](https://npmjs.com/package/@gitlab/nuxt-edit-this-page)
 [![npm](https://img.shields.io/npm/dt/@gitlab/nuxt-edit-this-page.svg?style=flat-square)](https://npmjs.com/package/@gitlab/nuxt-edit-this-page)
-[![Dependencies](https://david-dm.org/gitlabinc/nuxt-edit-this-page/status.svg?style=flat-square)](https://david-dm.org/gitlabinc/nuxt-edit-this-page)
 
 > Add an "Edit this page" link to your Nuxt pages
 
 [📖 **Release Notes**](./CHANGELOG.md)
+
+## Features
+
+This module let's you add "Edit this page" links in your Nuxt project's pages. The link opens the web IDE for the active file, which is the page's Vue file by default but that can be changed as needed by using a custom path resolver.
 
 ## Supported Git services
 
