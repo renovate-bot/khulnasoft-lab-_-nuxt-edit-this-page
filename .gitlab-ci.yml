@@ -12,8 +12,7 @@ eslint:
     - *install
   script:
     - yarn eslint
-    # TODO: find out why this job is failing in CI
-    # - yarn prettier
+    - yarn prettier
 
 test:
   stage: test
