@@ -4,7 +4,7 @@ const request = require('request-promise-native');
 const getConfig = require('./fixture/nuxt.config');
 
 const port = 3001;
-const repoUrl = 'https://gitlab.com/gitlab-org/nuxt-edit-this-page';
+const repoUrl = 'https://gitlab.com/gitlab-org/frontend/nuxt-edit-this-page';
 const { JSDOM } = jsdom;
 
 let nuxt;
