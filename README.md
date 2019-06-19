@@ -72,13 +72,13 @@ Example:
 // nuxt.config.js
 {
   editThisPage: {
-    repo: 'git@gitlab.com:gitlab-org/nuxt-edit-this-page.git',
+    repo: 'git@gitlab.com:gitlab-org/frontend/nuxt-edit-this-page.git',
 
     // Or
-    // repo: 'https://gitlab.com/gitlab-org/nuxt-edit-this-page.git',
+    // repo: 'https://gitlab.com/gitlab-org/frontend/nuxt-edit-this-page.git',
 
     // Also works with the project's URL
-    // repo: 'https://gitlab.com/gitlab-org/nuxt-edit-this-page',
+    // repo: 'https://gitlab.com/gitlab-org/frontend/nuxt-edit-this-page',
   }
 }
 ```
