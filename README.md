@@ -120,7 +120,23 @@ Base URL to prepend to the file path when generating the edit link. This is comp
 
 Text to show when rendering the link. Defaults to the value set in the module's options.
 
-### Custom path resolver
+## Scoped slot
+
+The component exposes a scoped slot that you can use to customize the rendering if props are too limited. The slot receives a property `href` that contains the computed edit URL.
+
+Example
+
+```vue
+<template>
+  <edit-this-page-link>
+    <template v-slot:default="{ href }">
+      <span>Customized link pointing to {{ href }}</span>
+    </template>
+  </edit-this-page-link>
+</template>
+```
+
+## Custom path resolver
 
 Sometimes, your pages display contents from other files and you might want the "Edit this page" link to point to the included file, rather than the visited page's component. This can be achieved by adding an `editThisPage.resolve` option to your page. `editThisPage.resolve` is a function that receives the current route and should return the computed file path relative to the repository's root.
 
