@@ -6,7 +6,7 @@ stages:
 .install: &install
   yarn install
 
-eslint:
+lint:
   stage: test
   before_script:
     - *install
