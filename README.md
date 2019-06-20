@@ -163,8 +163,8 @@ export default {
 ## Development
 
 - Clone this repository
-- Install dependencies using `yarn install` or `npm install`
-- Start development server using `npm run dev`
+- Install dependencies using `yarn install`
+- Start development server using `yarn dev`
 
 ## License
 
