@@ -104,7 +104,7 @@ Text to show when rendering the link.
 
 The component's name.
 
-### Props
+## Props
 
 The component accepts a few props that let you override the module's options if needed.
 
