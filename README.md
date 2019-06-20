@@ -1,5 +1,6 @@
 # nuxt-edit-this-page
 
+[![pipeline status](https://gitlab.com/gitlab-org/frontend/nuxt-edit-this-page/badges/master/pipeline.svg)](https://gitlab.com/gitlab-org/frontend/nuxt-edit-this-page/commits/master)
 [![npm (scoped with tag)](https://img.shields.io/npm/v/@gitlab/nuxt-edit-this-page/latest.svg?style=flat-square)](https://npmjs.com/package/@gitlab/nuxt-edit-this-page)
 [![npm](https://img.shields.io/npm/dt/@gitlab/nuxt-edit-this-page.svg?style=flat-square)](https://npmjs.com/package/@gitlab/nuxt-edit-this-page)
 
@@ -9,7 +10,7 @@
 
 ## Features
 
-This module let's you add "Edit this page" links in your Nuxt project's pages. The link opens the web IDE for the active file, which is the page's Vue file by default but that can be changed as needed by using a custom path resolver.
+This module let's you add "Edit this page" links to your Nuxt project's pages. The link opens the web IDE for the active file, which is the page's Vue file by default but that can be changed as needed by using a custom path resolver.
 
 ## Supported Git services
 
