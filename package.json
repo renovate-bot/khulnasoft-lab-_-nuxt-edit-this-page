@@ -1,6 +1,6 @@
 {
   "name": "@gitlab/nuxt-edit-this-page",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Add an 'Edit this page' link to your Nuxt pages",
   "repository": "https://gitlab.com/gitlab-org/frontend/nuxt-edit-this-page",
   "homepage": "https://gitlab.com/gitlab-org/frontend/nuxt-edit-this-page/blob/master/README.md",
