@@ -84,6 +84,13 @@ Example:
 }
 ```
 
+### path
+
+- **Type**: `String`
+- **Default**: `'blob'`
+
+The `path` option is appended to the base edit URL. By default, the blob path is used, which produces URLs like `https://gitlab.com/gitlab-org/frontend/nuxt-edit-this-page/blob/master/README.md`. This option could be used to make the URL point to the edit path directly, ie setting `path` to `'edit'` would produce URLs like `https://gitlab.com/gitlab-org/frontend/nuxt-edit-this-page/edit/master/README.md`.
+
 ### branch
 
 - **Type**: `String`

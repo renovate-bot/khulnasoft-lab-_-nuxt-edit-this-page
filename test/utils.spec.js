@@ -63,7 +63,19 @@ describe('getEditUrl', () => {
   ];
   it.each(repoOptionValidValues)('computes edit URL properly when repo option is %s', option => {
     expect(getEditUrl(option)).toBe(
+      'https://gitlab.com/gitlab-org/frontend/nuxt-edit-this-page/blob/master',
+    );
+  });
+
+  it.each(repoOptionValidValues)('computes edit URL properly when repo option is %s and path is edit', option => {
+    expect(getEditUrl(option, 'edit')).toBe(
       'https://gitlab.com/gitlab-org/frontend/nuxt-edit-this-page/edit/master',
+    );
+  });
+
+  it.each(repoOptionValidValues)('computes edit URL properly when repo option is %s and branch is some-branch', option => {
+    expect(getEditUrl(option, 'blob', 'some-branch')).toBe(
+      'https://gitlab.com/gitlab-org/frontend/nuxt-edit-this-page/blob/some-branch',
     );
   });
 });

@@ -24,7 +24,7 @@ const getDom = async path => {
 };
 
 describe("with basic config", () => {
-  const getEditUrl = path => `${repoUrl}/edit/master/pages/${path}`;
+  const getEditUrl = path => `${repoUrl}/blob/master/pages/${path}`;
 
   beforeAll(async () => {
     nuxt = new Nuxt(getConfig());
@@ -78,7 +78,7 @@ describe("with basic config", () => {
     it("sets href properly", async () => {
       const dom = await getDom("/custom-resolver/my-slug");
       expect(dom.querySelector("a.edit-this-page-link").href).toBe(
-        `${repoUrl}/edit/master/my-slug.md`
+        `${repoUrl}/blob/master/my-slug.md`
       );
     });
   });
@@ -96,7 +96,7 @@ describe("with incomplete config", () => {
 });
 
 describe("with different git branch in config", () => {
-  const getEditUrl = path => `${repoUrl}/edit/some-branch/pages/${path}`;
+  const getEditUrl = path => `${repoUrl}/blob/some-branch/pages/${path}`;
 
   beforeAll(async () => {
     nuxt = new Nuxt(getConfig({ fixture: "branch" }));
