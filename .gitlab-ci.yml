@@ -11,20 +11,31 @@ image: node:12
 stages:
   - test
 
-.install: &install
-  yarn install
+.cache-template: &cache-template
+  paths:
+    - node_modules/
+  key:
+    files:
+      - .gitlab-ci.yml
+      - yarn.lock
+    prefix: node_modules  
+
+.yarn_install:
+  before_script:
+    - yarn install --frozen-lockfile
+  cache:
+    <<: *cache-template
+    policy: pull
 
 lint:
   stage: test
-  before_script:
-    - *install
+  extends: [.yarn_install]
   script:
     - yarn eslint
     - yarn prettier
 
 test:
   stage: test
-  before_script:
-    - *install
+  extends: [.yarn_install]
   script:
     - yarn test
