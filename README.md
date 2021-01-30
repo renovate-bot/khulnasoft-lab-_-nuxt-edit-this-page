@@ -57,8 +57,6 @@ When enabled, the module registers a global component that you can use to displa
 </template>
 ```
 
-The component accepts a few props to customize the ads you display.
-
 ## Options
 
 ### repo
